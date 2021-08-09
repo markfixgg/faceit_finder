@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from '../../assets/img/logo.svg';
-import Greetings from '../../containers/Greetings/Greetings';
+import React, { useEffect, useState } from 'react';
 import './Popup.css';
+import { sendBackgroundMessage } from '../Content/modules/backgroundMessages';
+import Header from '../Header/Header'
+import Body from '../Body/Body'
+import Footer from '../Footer/Footer'
+
+import background_inferno from '../../assets/img/background_inferno.png'
 
 const Popup = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/pages/Popup/Popup.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React!
-        </a>
-      </header>
+    <div className="App" style={{background: `#282c34 url(${background_inferno})`}}>
+      <Header/>
+      <Body/>
+      <Footer/>
     </div>
   );
 };

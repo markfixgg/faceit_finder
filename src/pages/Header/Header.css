@@ -1,0 +1,29 @@
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.Header {
+    /*background-color: beige;*/
+    border-bottom: 1px solid #E1E5E9;
+    /*color: #282c34;*/
+}
+.wrapper {
+    @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+    font-family: 'Play', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.header__text {
+    text-shadow: 0 2px 1px #E1E5E9,
+    -1px 3px 1px #232828,
+    -2px 5px 1px #FF6900;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
