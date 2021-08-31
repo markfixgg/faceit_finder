@@ -2,7 +2,7 @@ import React from 'react';
 import './User.css';
 import levels from '../../assets/levels/levels'
 
-const User = ({avatar, nickname, skill_level, faceit_elo, matches, adr, headshots}) => {
+const User = ({id, avatar, nickname, skill_level, faceit_elo, matches, adr, headshots}) => {
   const openFaceIt = (e) => {
     e.preventDefault();
     chrome.tabs.create({url: `https://www.faceit.com/en/players/${nickname}`});
@@ -21,10 +21,6 @@ const User = ({avatar, nickname, skill_level, faceit_elo, matches, adr, headshot
           <div>
             <a onClick={openFaceIt}><h2>{nickname}</h2></a>
           </div>
-
-          {/*
-
-                */}
 
           <div style={{display: 'flex'}}>
             <div style={{display: 'block'}}>
